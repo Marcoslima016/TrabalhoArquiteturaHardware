@@ -1,0 +1,164 @@
+<html>
+<title>Enderecamento de memoria</title>
+
+<style>
+  .sombra1 {
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.54);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.54);
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.54);
+  }
+</style>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/script.js"> </script>
+
+
+<body style="background-color:#F2F2F2">
+
+
+  <dvi class="fad fa-circle-notch" style="width:20px; height:20px;"></dvi>
+
+
+  <div style="height:4%"></div>
+
+
+  <div class="sombra1" style="width:52%; height:87%; margin:0 auto; border-radius:10px;background-color:white; ">
+
+    <div style="height:5%"></div>
+
+    <div style="width:100%; text-align: center; font-size: 29px; opacity:0.8;">
+      Dimensionamento de memoria
+    </div>
+
+    <div style="height:5%"></div>
+
+    <!--===================================================== TABELA DIMENSIONAR MEMORIA =============================================================-->
+
+    <table style="width:82%; position:relative; margin:0 auto; vertical-align: none;">
+      <tr>
+
+        <!--------------------------- ENTRADA DE VALORES --------------------------->
+
+        <td
+          style="width:44%; vertical-align: none; border:1px solid #eaeaea; border-radius:5px; padding-left:30px; padding-right:30px;">
+          <div style="height:100%;">
+
+            <div style="height:20px"></div>
+
+            <div style="width:100%; text-align: center; font-size: 22px; opacity:0.6;">
+              Entrada de valores
+            </div>
+
+            <div style="height:25px"></div>
+
+            <!-- QTD DE CELULAS -->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Quantidade de celulas ( N ):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="valorN" style="width:100%; height:42px;" placeholder="">
+            <div style="height:15px"></div>
+
+            <!-- QTD BITS DE END-->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Qtd bits Enderecamento (E):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="valorE" style="width:100%; height:42px;" placeholder="">
+            <div style="height:15px"></div>
+
+            <!-- TOTAL T -->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Total armazenamento (T):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="valorTotal" style="width:100%; height:42px;" placeholder="">
+            <div style="height:15px"></div>
+
+            <!-- CAPACIDADE POR CELULA -->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Capacidade por celula (M):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="valorM" style="width:100%; height:42px;" placeholder="">
+
+            <div style="height:15px"></div>
+
+
+          </div>
+        </td>
+
+        <td style="height:100%; ">
+          <div style="height:100%; border-right:1px solid #eaeaea; width:2px; position:relative; margin: 0 auto;"></div>
+        </td>
+
+        <!------------------------------- RESULTADO ------------------------------->
+        <td
+          style="width:44%; vertical-align: none; border:1px solid #eaeaea; border-radius:5px; padding-left:30px; padding-right:30px;">
+          <div style="height:100%;">
+
+            <div style="width:100%; text-align: center; font-size: 22px; opacity:0.6;">
+              Resultado
+            </div>
+
+            <div style="height:25px"></div>
+
+            <!-- QTD DE CELULAS -->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Quantidade de celulas ( N ):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="resultadoN" style="width:100%; height:42px;" placeholder="">
+            <div style="height:15px"></div>
+
+            <!-- QTD BITS DE END-->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Qtd bits Enderecamento (E):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="resultadoE" style="width:100%; height:42px;" placeholder="">
+            <div style="height:15px"></div>
+
+            <!-- TOTAL T -->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Total armazenamento (T):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="resultadoTotal" style="width:100%; height:42px;" placeholder="">
+            <div style="height:15px"></div>
+
+            <!-- CAPACIDADE POR CELULA -->
+            <div style="width:100%; text-align: left; font-size: 16px; opacity:0.4;">
+              Capacidade por celula (M):
+            </div>
+            <div style="height:4.5px"></div>
+            <input type="text" id="resultadoM" style="width:100%; height:42px;" placeholder="">
+
+
+          </div>
+        </td>
+
+      </tr>
+
+    </table>
+
+    <div style="height:35px"></div>
+
+    <div style="width: 42%; margin:0 auto;">
+      <input type="button" onclick="startDim()" value="Dimensionar memoria" style="border:none;color: white; font-size:16px; border-radius:4px;background-color: #6273FF; width:100%;  height:65px;  -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;">
+    </div>
+
+    <div style="height:10px"></div>
+
+  </div>
+
+
+</body>
+
+
+
+
+</html>
